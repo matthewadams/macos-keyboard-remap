@@ -1,0 +1,9 @@
+https://karabiner-elements.pqrs.org/
+
+https://apple.stackexchange.com/questions/351531/how-to-restore-the-default-values-on-a-keyboard-in-terminal
+
+https://github.com/pqrs-org/Karabiner-Elements/issues/2196
+
+https://developer.apple.com/library/archive/technotes/tn2450/_index.html
+
+http://technologeeks.com/docs/launchd.pdf
