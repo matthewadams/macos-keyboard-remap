@@ -36,7 +36,7 @@ if [ -z "$@" ]; then # no mappings
 fi
 
 sep=
-mappings='{"UserKeyMapping:['
+mappings='{"UserKeyMapping":['
 for mapping in $@; do
   sd=(${mapping//:/ })
   src=${sd[0]}
@@ -51,7 +51,7 @@ for mapping in $@; do
   src="$(echo -n $src | tr '[:lower:]' '[:upper:]')"
   dst="$(echo -n $dst | tr '[:lower:]' '[:upper:]')"
   
-  mappings="$mappings$sep{"HIDKeyboardModifierMappingSrc":0x7000000$src,"HIDKeyboardModifierMappingDst":0x7000000$dst}"
+  mappings="$mappings$sep{\"HIDKeyboardModifierMappingSrc\":0x7000000$src,\"HIDKeyboardModifierMappingDst\":0x7000000$dst}"
 
   if [ -z "$sep" ]; then
     sep=,
