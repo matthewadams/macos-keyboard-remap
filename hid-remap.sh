@@ -31,7 +31,7 @@ if [ -z "$HIDUTIL_PRODUCT_ID" ]; then
 fi
 shift
 
-if [ -z "$@" ]; then # no mappings
+if [ -z "$*" ]; then # no mappings
   exit 0
 fi
 
